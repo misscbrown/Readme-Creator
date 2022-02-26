@@ -44,23 +44,40 @@ inquirer
     },
     {
       type: 'input',
-      message: 'How is the project tested?',
+      message: 'What command should be used for tests?',
       name: 'tests',
     },
     {
       type: 'input',
       message: 'How do people ask questions?',
       name: 'questions',
-    }
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'Enter your email address',
+    },
+    {
+        type: 'input',
+        message: 'Enter github username',
+        name: 'email',
+    },
 ])
 ];
 
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    console.log(data);
+  fs.writeFile(fileName, generateMarkdown(data), (err) =>
+    err ? console.log(err) : console.log("success")
+  );
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    
+}
 
 // Function call to initialize app
 init();
