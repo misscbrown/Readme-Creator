@@ -3,12 +3,10 @@
 const fs = require('fs'); 
 const inquirer = require('inquirer'); 
 const generateMarkdown = require('./utils/generateMarkdown');
+const fileName = './Output/README.md';
 
 // TODO: Create an array of questions for user input
 const questions = [
-
-inquirer
-  .prompt([
     {
       type: 'input',
       message: 'What is your project title?',
@@ -62,24 +60,55 @@ inquirer
         message: 'Enter github username',
         name: 'email',
     },
-])
 ];
 
 
-// TODO: Create a function to write README file
+
+// //TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    console.log(data);
-  fs.writeFile(fileName, generateMarkdown(data), (err) =>
-    err ? console.log(err) : console.log("success")
-  );
+    const markdown = generateMarkdown (data);
+  fs.writeFile(fileName, markdown, function (err) {
+      if (err) throw err;
+      console.log("success");
+  });
 }
 
-// TODO: Create a function to initialize app
+
+
+// // TODO: Create a function to initialize app
 function init() {
-    inquirer.prompt(questions).then((answers) => {
-        writeToFile("README.md", answers);
+    inquirer.prompt(questions).then(function (data) {
+        writeToFile(fileName, data);
       });
 }
 
-// Function call to initialize app
+// // Function call to initialize app
 init();
+
+// const writeFile = data => {
+//     fs.writeFile('README.md', data, err => {
+//         // if there is an error 
+//         if (err) {
+//             console.log(err);
+//             return;
+//         // when the README has been created 
+//         } else {
+//             console.log("Your README has been successfully created!")
+//         }
+//     })
+// }; 
+
+// // function call to initialize program
+// questions()
+// // getting user answers 
+// .then(answers => {
+//     return generateMarkdown(answers);
+// })
+// // using data to display on page 
+// .then(data => {
+//     return writeFile(data);
+// })
+// // catching errors 
+// .catch(err => {
+//     console.log(err)
+//})
