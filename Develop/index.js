@@ -24,7 +24,7 @@ const questions = [
     },
     {
       type: 'input',
-      message: 'How is this used?',
+      message: 'How is this project used?',
       name: 'usage',
     },
     {
@@ -57,7 +57,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Enter github username',
+        message: 'Enter your github username',
         name: 'username',
     },
 ];
