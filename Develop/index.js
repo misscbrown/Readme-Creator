@@ -5,7 +5,7 @@ const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
 const fileName ='./Output/README.md';
 
-// TODO: Create an array of questions for user input
+// TODO: Create an array of questions for user input, to generate data for readme
 const questions = [
     {
       type: 'input',
