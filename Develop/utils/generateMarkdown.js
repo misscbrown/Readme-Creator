@@ -2,7 +2,7 @@
 
 const generateMarkdown = data => {
   return `# ${data.title}
-  ![Github licence](http://img.shields.io/badge/license-${data.license}-blue.svg)
+  
   
   ## Description 
   ${data.description}
@@ -15,17 +15,18 @@ const generateMarkdown = data => {
   * [Questions](#questions)
   
   ## Installation 
-  ${data.install}
+  ${data.installation}
   ## Usage 
   ${data.usage}
   ## License 
-  This project is licensed under ${data.license}
+  This projects github license is under ${data.license}
+  ![Github licence](https://img.shields.io/badge/License-${data.license[0]}-green)
   ## Contributing 
-  ${data.contributors}
+  ${data.contributing}
   ## Tests
-  ${data.test}
+  ${data.tests}
   ## Questions
-  If you have questions, please email me directly at ${data.email}. You can view more of my projects at https://github.com/${data.github}.
+  If you have questions, please email me directly at ${data.email}. You can view more of my projects at https://github.com/${data.username}.
 `;
 }
 
