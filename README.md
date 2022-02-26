@@ -39,4 +39,3 @@ Github: https://github.com/misscbrown/Readme-Creator
 ![Screenshot of completed application](./Images/screenshot1.png)
 ![Screenshot of completed application](./Images/screenshot2.png)
 
-
