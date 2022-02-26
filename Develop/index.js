@@ -69,7 +69,7 @@ function writeToFile(fileName, data) {
     const markdown = generateMarkdown (data);
   fs.writeFile(fileName, markdown, function (err) {
       if (err) throw err;
-      console.log("success");
+      console.log("Success! Your READme has been generated");
   });
 }
 
