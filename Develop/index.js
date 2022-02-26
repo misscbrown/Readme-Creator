@@ -85,30 +85,4 @@ function init() {
 // // Function call to initialize app
 init();
 
-// const writeFile = data => {
-//     fs.writeFile('README.md', data, err => {
-//         // if there is an error 
-//         if (err) {
-//             console.log(err);
-//             return;
-//         // when the README has been created 
-//         } else {
-//             console.log("Your README has been successfully created!")
-//         }
-//     })
-// }; 
 
-// // function call to initialize program
-// questions()
-// // getting user answers 
-// .then(answers => {
-//     return generateMarkdown(answers);
-// })
-// // using data to display on page 
-// .then(data => {
-//     return writeFile(data);
-// })
-// // catching errors 
-// .catch(err => {
-//     console.log(err)
-//})
