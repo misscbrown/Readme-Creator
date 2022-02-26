@@ -1,5 +1,5 @@
 
-
+// generates data for markdown
 const generateMarkdown = data => {
   return `# ${data.title}
   
