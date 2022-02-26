@@ -1,8 +1,8 @@
 # ljhljh
-  ![Github licence](http://img.shields.io/badge/license-Apache License 2.0-blue.svg)
+  
   
   ## Description 
-  ljhlj
+  ljhlhj
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
@@ -12,14 +12,15 @@
   * [Questions](#questions)
   
   ## Installation 
-  undefined
-  ## Usage 
   ljhljh
+  ## Usage 
+  ljhjh
   ## License 
-  This project is license under Apache License 2.0
+  This projects github license is under Apache License 2.0
+  ![Github licence](https://img.shields.io/badge/License-A-green)
   ## Contributing 
-  undefined
+  ljhj
   ## Tests
-  undefined
+  kljh
   ## Questions
-  If you have any questions about this projects, please contact me directly at ljhljh. You can view more of my projects at https://github.com/undefined.
+  If you have questions, please email me directly at jhlj. You can view more of my projects at https://github.com/ljhjlh.
